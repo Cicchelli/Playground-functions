@@ -1,21 +1,29 @@
 // Desafio 1 - Crie a função compareTrue
 const compareTrue = (parametro1, parametro2) => {
-  if(parametro1 && parametro2) === true{
-    return = true
+  if(parametro1 && parametro2 === true) { 
+    return true;
   }
-}return = false
+
+  return false;
+}
 // Desafio 2 - Crie a função splitSentence
-const splitSentence = (frase) => frase.splitt(' ');
+const splitSentence = (frase) => frase.split(' ');
 
 // Desafio 3 - Crie a função concatName
-const concatName = (array) =>{
-const primeiroNome = array[0];
-const ultimoNome = array[array.lenght - 1];
-const nomeCompleto = [ultimoNome, primeiroNome].join('/')
-return nomeCompleto;
+const concatName = (array) => {
+  const primeiroNome = array[0];
+  const ultimoNome = array[array.lenght - 1];
+  const nomeCompleto = [ultimoNome, primeiroNome].join(', ');
+  return nomeCompleto;
+
 }
 
+
 // Desafio 4 - Crie a função footballPoints
+const footballPoints = () => {
+
+
+}
 
 // Desafio 5 - Crie a função highestCount
 
