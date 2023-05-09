@@ -48,7 +48,8 @@ const calcAllAreas = (base, altura, forma) => {
   if (forma === 'retângulo') {
     valorDaArea = calcRectangleArea(base, altura);
     return `O valor da área do retângulo é de: ${valorDaArea}`;
-       } if (forma === 'triângulo') {
+  }
+  if (forma === 'triângulo') {
     valorDaArea = calcTriangleArea(base, altura);
     return `O valor da área do triângulo é de: ${valorDaArea}`;
   }
@@ -60,13 +61,12 @@ const calcAllAreas = (base, altura, forma) => {
 function catAndMouse(mouse, cat1, cat2) {
   const distCat1 = Math.abs(mouse - cat1);
   const distCat2 = Math.abs(mouse - cat2);
-  if(distCat1 < distCat2){
+  if (distCat1 < distCat2) {
     return 'cat1';
-  }else if(distCat2 < distCat1){
+  } if (distCat2 < distCat1) {
     return 'cat2';
-  }else {
-    return 'os gatos trombam e o rato foge'
   }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8 - Crie a função fizzBuzz
