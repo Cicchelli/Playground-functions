@@ -12,7 +12,7 @@ const splitSentence = (frase) => frase.split(' ');
 // Desafio 3 - Crie a função concatName
 const concatName = (array) => {
   const primeiroNome = array[0];
-  const ultimoNome = array[array.lenght - 1];
+  const ultimoNome = array[array.length - 1];
   const nomeCompleto = [ultimoNome, primeiroNome].join(', ');
   return nomeCompleto;
 
