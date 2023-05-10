@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 // Desafio 1 - Crie a função compareTrue
 const compareTrue = (parametro1, parametro2) => {
   if (parametro1 && parametro2 === true) {
@@ -63,13 +64,29 @@ function catAndMouse(mouse, cat1, cat2) {
   const distCat2 = Math.abs(mouse - cat2);
   if (distCat1 < distCat2) {
     return 'cat1';
-  } if (distCat2 < distCat1) {
+  }
+  if (distCat2 < distCat1) {
     return 'cat2';
   }
   return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8 - Crie a função fizzBuzz
+
+function fizzBuzz(entrada) {
+  for (let index = 0; index < entrada.length; index += 1) {
+    if (entrada[index] % 3 === 0 && entrada[index] % 5 === 0) {
+      entrada[index] = 'fizzBuzz';
+    } else if (entrada[index] % 5 === 0) {
+      entrada[index] = 'buzz';
+    } else if (entrada[index] % 3 === 0) {
+      entrada[index] = 'fizz';
+    } else {
+      entrada[index] = 'bug!';
+    }
+  }
+  return entrada;
+}
 
 // Desafio 9 - Crie a função encode e a função decode
 
