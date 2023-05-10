@@ -90,7 +90,24 @@ function fizzBuzz(entrada) {
 
 // Desafio 9 - Crie a função encode e a função decode
 
+function encode(texto) {
+  let code = ['a', 'e', 'i', 'o', 'u'];
+  for (let i = 1; i <= code.length; i += 1) {
+    texto = texto.replace(RegExp(code[i - 1], 'g'), i);
+  }
+  return texto;
+}
+
+function decode(texto) {
+  let code = ['a', 'e', 'i', 'o', 'u'];
+  for (let i = 1; i <= code.length; i += 1) {
+    texto = texto.replace(RegExp(i.toString(), 'g'), code[i - 1]);
+  }
+  return texto;
+}
+
 // Desafio 10 - Crie a função techList
+
 
 // Não modifique essas linhas
 module.exports = {
