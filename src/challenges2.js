@@ -1,6 +1,17 @@
 // Desafio 11 - Crie a função generatePhoneNumber
 
 // Desafio 12 -  Crie a função triangleCheck
+function triangleCheck(lineA, lineB, lineC) {
+  
+  let checaA = lineA < lineB + lineC && > Math.abs(lineB - lineC);
+
+  let checaB = lineB < lineA + lineC && > Math.abs(lineA - lineC);
+
+  let checaC = lineC < lineB + lineA && > Math.abs(lineB - lineA);
+
+  return checaA && checaB && checaC;
+}
+
 
 // Desafio 13 - Crie a função hydrate
 

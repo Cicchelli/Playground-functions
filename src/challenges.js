@@ -115,28 +115,11 @@ const techList = (array, texto) => {
   for (let index = 0; index < array.length; index += 1) {
     novo[index] = {
       tech: array[index],
-      name: texto
+      name: texto,
     };
   }
   return novo;
-} 
-
-// function techList(listaTech, name) {
-//   if (listaTech.length === 0) {
-//   return [];
-// }
-
-// let resultArray = [];
-// listaTech.sort();
-// for (let skill of listaTech) {
-//   let objeto = {
-//     tech: skill,
-//     name: `${name}`,
-//   };
-//   resultArray.push(objeto);
-// }
-// return resultArray;
-// }
+};
 
 // Não modifique essas linhas
 module.exports = {
